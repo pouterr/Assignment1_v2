@@ -11,7 +11,7 @@ public class Task9 {
         if (k == 0 || k == n) {
             return 1;
         }
-        // Add together C(n-1, k-1) and C(n-1, k)
+        // Add together C(n-1, k-1) and C(n-1, k) using Euclidean algorithm
         else {
             return findBinomialCoefficient(n - 1, k - 1) + findBinomialCoefficient(n - 1, k);
         }
