@@ -1,13 +1,19 @@
 public class Task5 {
+    /**
+     * Recursively calculates the n-th number in the Fibonacci sequence.
+     *
+     * @param n The position of the number in the Fibonacci sequence.
+     * @return The n-th number in the Fibonacci sequence.
+     */
     public static int findFibSeqNumb(int n){
-        //0-th of fibo sequence is 0
+        //if n is 0, return 0 (0-th number in the Fibonacci sequence is 0)
         if(n == 0){
             return 0;
-            //1-th of fibo sequence is 1
+        //if n is 1, return 1 (1-st number in the Fibonacci sequence is 1)
         } else if (n==1) {
             return 1;
         }else{
-            //addition of previous number and n-2 number
+            //calculate the sum of the (n - 1)-th and (n - 2)-th Fibonacci numbers
             int result = findFibSeqNumb(n-1)+ findFibSeqNumb(n-2);
             return result;
         }
